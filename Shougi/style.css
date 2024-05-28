@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-size: 28px; /* フォントサイズを大きくする */
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  width: 80px; /* 幅を大きくする */
+  height: 80px; /* 高さを大きくする */
+  border: 1px solid #000;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+
+td img {
+  max-width: 100%; /* 画像の幅をセルに合わせる */
+  max-height: 100%; /* 画像の高さをセルに合わせる */
+  object-fit: contain; /* 画像をセルに合わせてトリミング */
+  cursor: move; /* カーソルを動かす */
+  position: absolute; /* ドラッグ可能にするため */
+}
+
+.small-image {
+  width: 70px;
+  height: 70px;
+}
+
+td:hover {
+  background-color: #ccc;
+}
